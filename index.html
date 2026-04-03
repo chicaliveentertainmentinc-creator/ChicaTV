@@ -18,7 +18,6 @@
             line-height: 1.6;
         }
 
-        /* Header */
         header {
             background: rgba(0,0,0,0.8);
             padding: 20px;
@@ -40,7 +39,6 @@
             opacity: 0.9;
         }
 
-        /* Navigation */
         nav {
             background: rgba(0,0,0,0.6);
             padding: 15px;
@@ -62,14 +60,12 @@
             color: #ff3366;
         }
 
-        /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 40px 20px;
         }
 
-        /* Sections */
         .section {
             background: rgba(255,255,255,0.1);
             border-radius: 20px;
@@ -86,7 +82,6 @@
             padding-left: 15px;
         }
 
-        /* Stream Embed */
         .stream-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -119,7 +114,6 @@
             border-radius: 10px;
         }
 
-        /* Fan Wall - Google Form embed */
         .fan-wall {
             margin-top: 20px;
         }
@@ -146,7 +140,6 @@
             border-radius: 10px;
         }
 
-        /* Social Links */
         .social-links {
             display: flex;
             flex-wrap: wrap;
@@ -176,7 +169,6 @@
         .social-btn.tiktok { background: #000000; }
         .social-btn.snapchat { background: #FFFC00; color: #000; }
 
-        /* Email Signup */
         .email-form {
             text-align: center;
         }
@@ -198,7 +190,6 @@
             cursor: pointer;
         }
 
-        /* Footer */
         footer {
             text-align: center;
             padding: 30px;
@@ -206,7 +197,6 @@
             margin-top: 40px;
         }
 
-        /* Mobile */
         @media (max-width: 768px) {
             header h1 { font-size: 2rem; }
             nav a { display: block; margin: 10px; }
@@ -229,37 +219,32 @@
 </nav>
 
 <div class="container">
-    <!-- Live Stream + Chat Section -->
     <div id="stream" class="section">
         <h2>🔴 WATCH CHICA LIVE</h2>
         <div class="stream-wrapper">
             <div class="stream-video">
-                <!-- TWITCH EMBED - Replace YOUR_TWITCH_CHANNEL with her actual channel name -->
                 <iframe 
-                    src="https://player.twitch.tv/?channel=YOUR_TWITCH_CHANNEL&parent=localhost&parent=YOUR_GITHUB_USERNAME.github.io"
+                    src="https://player.twitch.tv/?channel=chica&parent=localhost&parent=YOUR_GITHUB_USERNAME.github.io"
                     allowfullscreen>
                 </iframe>
                 <p style="margin-top: 10px; text-align: center;">
-                    <a href="https://twitch.tv/YOUR_TWITCH_CHANNEL" target="_blank" style="color:#ff3366">➡️ Open in Twitch ⬅️</a>
+                    <a href="https://twitch.tv/chica" target="_blank" style="color:#ff3366">➡️ Open in Twitch ⬅️</a>
                 </p>
             </div>
             <div class="stream-chat">
-                <!-- Free Chat Embed using StreamElements -->
                 <iframe 
-                    src="https://www.streamelements.com/embed/chat?channel=YOUR_TWITCH_CHANNEL"
+                    src="https://www.streamelements.com/embed/chat?channel=chica"
                     allowfullscreen>
                 </iframe>
             </div>
         </div>
     </div>
 
-    <!-- Fan Wall Section -->
     <div id="wall" class="section">
         <h2>💬 FAN WALL</h2>
         <p>Leave a message for Chica! Your post will appear below after approval (spam filter active).</p>
         <div class="fan-wall">
-            <!-- GOOGLE FORM EMBED - Replace with your Google Form embed code -->
-            <!-- STEP: Create a Google Form, go to Send > Embed, copy the iframe code and paste it here -->
+            <!-- GOOGLE FORM EMBED - Create a form at forms.google.com and paste embed code here -->
             <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
         <div class="wall-posts">
@@ -277,26 +262,23 @@
         </div>
     </div>
 
-    <!-- Social Links Section -->
     <div id="social" class="section">
         <h2>📱 FOLLOW CHICA</h2>
         <div class="social-links">
-            <a href="https://twitch.tv/YOUR_TWITCH_CHANNEL" class="social-btn twitch" target="_blank">🎮 Twitch</a>
-            <a href="https://twitter.com/YOUR_TWITTER" class="social-btn twitter" target="_blank">🐦 Twitter</a>
-            <a href="https://instagram.com/YOUR_INSTAGRAM" class="social-btn instagram" target="_blank">📷 Instagram</a>
-            <a href="https://youtube.com/@YOUR_YOUTUBE" class="social-btn youtube" target="_blank">📺 YouTube</a>
-            <a href="https://tiktok.com/@YOUR_TIKTOK" class="social-btn tiktok" target="_blank">🎵 TikTok</a>
-            <a href="https://snapchat.com/add/YOUR_SNAPCHAT" class="social-btn snapchat" target="_blank">👻 Snapchat</a>
+            <a href="https://twitch.tv/chica" class="social-btn twitch" target="_blank">🎮 Twitch</a>
+            <a href="https://twitter.com/chicalive" class="social-btn twitter" target="_blank">🐦 Twitter</a>
+            <a href="https://instagram.com/chica" class="social-btn instagram" target="_blank">📷 Instagram</a>
+            <a href="https://youtube.com/@robloxchica" class="social-btn youtube" target="_blank">📺 YouTube</a>
+            <a href="https://tiktok.com/@chica" class="social-btn tiktok" target="_blank">🎵 TikTok</a>
+            <a href="https://snapchat.com/add/chicalivee" class="social-btn snapchat" target="_blank">👻 Snapchat</a>
         </div>
     </div>
 
-    <!-- Email Signup Section -->
     <div id="email" class="section">
         <h2>✉️ GET ALERTS</h2>
         <p>Sign up to get email alerts when Chica goes live, posts new content, or has special announcements!</p>
         <div class="email-form">
-            <!-- MAILCHIMP EMBED - Replace with your Mailchimp embed code -->
-            <!-- STEP: In Mailchimp, go to Audience > Signup forms > Embedded forms, copy code and paste below -->
+            <!-- MAILCHIMP EMBED - Create a free Mailchimp account and paste embed code here -->
             <div id="mailchimp-placeholder">
                 <p style="background:#ff336620; padding:20px; border-radius:10px;">
                     🔧 <strong>Mailchimp form will appear here</strong><br>
